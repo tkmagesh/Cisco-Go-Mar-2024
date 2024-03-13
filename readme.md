@@ -64,3 +64,23 @@
 
 ## To execute a go file
 > go run <file_name.go>
+## To create a build
+> go build <file_name.go>
+
+> go build -o <binary_name> <file_name.go>
+## To get the list of env variables used by go tool
+> go env
+
+> go env <var_1> <var_2>
+## To set the values of env variables
+> go env -w <var_1>=<val_1> <var_2>=<val_2> ....
+## The environment variables for Cross compilation
+- GOOS
+- GOARCH
+## To get the list of supported platforms (OS/processor)
+> go tool dist list
+## To cross compile
+> GOOS=<target_os> GOARCH=<target_arch> go build  <file_name.go>
+
+ex:
+> GOOS=windows GOARCH=386 go build  01-hello-world.go
