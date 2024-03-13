@@ -28,3 +28,36 @@
 
 ### Verification
 > go version
+
+## Why Go?
+- Simplicity
+    - ONLY 25 keywords 
+    - NO access modifiers (public / private etc)
+    - NO reference types (everything is a "value" by default)
+    - NO Pointer arithmatic
+    - NO classes (only structs)
+    - NO inheritance (only composition)
+    - NO exceptions (only errors)
+    - NO "try-catch-finally" constructs
+    - NO implicit type conversion
+    - Language Constructs
+        - var, :=
+        - if else, switch case
+        - for
+        - function
+        - struct
+        - interface
+- Performance
+    - Close to hardware (No JVM/CLR)
+    - Build for each platform
+        - Tooling support for cross-compilation
+    - On par with c++
+- Concurrency
+    - Managed Concurrency (built in scheduler)
+    - A concurrent operation is represented as a goroutine (lightweight - 4KB)
+    - Language support for concurrency
+        - go keyword, channel data type, channel operator ( <- ), for-range & select-case constructs
+    - API support
+        - sync package
+        - sync/atomic package
+    ![image](./images/go-concurrency.png)
