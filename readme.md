@@ -117,3 +117,5 @@ ex:
 - Package Scope
     - CANNOT use ":="
     - CAN have unused variables
+
+## Functions
