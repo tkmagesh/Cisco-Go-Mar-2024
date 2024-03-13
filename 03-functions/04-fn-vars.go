@@ -14,25 +14,26 @@ func main() {
 		fmt.Printf("Hi %s, Have a nice day!\n", userName)
 	}
 	greet("Magesh")
-	/*
-		// with 1 parameter
-		func(userName string) {
-			fmt.Printf("Hi %s, Have a nice day!\n", userName)
-		}("Magesh")
 
-		func(firstName, lastName string) {
-			fmt.Printf("Hi %s %s, Have a good day!\n", firstName, lastName)
-		}("Magesh", "Kuppan")
+	var greetUser func(string, string)
+	greetUser = func(firstName, lastName string) {
+		fmt.Printf("Hi %s %s, Have a good day!\n", firstName, lastName)
+	}
+	greetUser("Magesh", "Kuppan")
 
-		msg := func(userName string) string {
-			return fmt.Sprintf("Hi %s, Have a fantastic day!", userName)
-		}("Magesh")
-		fmt.Println(msg)
+	var getGreetMsg func(string) string
+	getGreetMsg = func(userName string) string {
+		return fmt.Sprintf("Hi %s, Have a fantastic day!", userName)
+	}
+	msg := getGreetMsg("Magesh")
+	fmt.Println(msg)
 
-		q, r := func(x, y int) (quotient, remainder int) {
-			quotient, remainder = x/y, x%y
-			return
-		}(100, 7)
-		fmt.Println(q, r)
-	*/
+	var divide func(int, int) (int, int)
+	divide = func(x, y int) (quotient, remainder int) {
+		quotient, remainder = x/y, x%y
+		return
+	}
+	q, r := divide(100, 7)
+	fmt.Println(q, r)
+
 }

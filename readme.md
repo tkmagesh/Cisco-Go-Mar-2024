@@ -119,3 +119,8 @@ ex:
     - CAN have unused variables
 
 ## Functions
+- Variadic functions
+- Higher Order Functions (functions as data)
+    - Assign functions as values to variables
+    - Pass functions as arguments to other functions
+    - Return functions as return values from other functions
