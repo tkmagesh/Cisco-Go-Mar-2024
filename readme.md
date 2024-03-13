@@ -61,3 +61,6 @@
         - sync package
         - sync/atomic package
     ![image](./images/go-concurrency.png)
+
+## To execute a go file
+> go run <file_name.go>
