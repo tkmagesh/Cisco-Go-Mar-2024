@@ -6,7 +6,7 @@ import "fmt"
 // var app_name string = "hello_world"
 var app_name = "hello_world"
 
-// app_name := "hello_world" // invalid
+// app_name := "hello_world" // use of := is invalid in package scope
 
 func main() {
 	/*
@@ -114,8 +114,22 @@ func main() {
 	*/
 
 	// using :=
+	/*
+		x := 100
+		y := 200
+		str := "Sum of %d and %d is %d\n"
+		result := x + y
+		fmt.Printf(str, x, y, result)
+	*/
+
+	// using := & multi assignment
+
 	x, y, str := 100, 200, "Sum of %d and %d is %d\n"
 	result := x + y
 	fmt.Printf(str, x, y, result)
+
+	// unused variables are not allowed at function scope
+	var org string = "Cisco"
+	fmt.Println(org)
 
 }
