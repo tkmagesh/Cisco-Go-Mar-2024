@@ -27,23 +27,3 @@ func main() {
 	}(100, 7)
 	fmt.Println(q, r)
 }
-
-// with > 1 parameters
-/*
-func greetUser(firstName string, lastName string) {
-	fmt.Printf("Hi %s %s, Have a good day!\n", firstName, lastName)
-}
-*/
-
-// with return value
-
-// with > 1 return values
-/*
-func divide(x, y int) (int, int) {
-	quotient := x / y
-	remainder := x % y
-	return quotient, remainder
-}
-*/
-
-// using named results
