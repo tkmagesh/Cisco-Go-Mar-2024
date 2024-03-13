@@ -11,12 +11,14 @@ func main() {
 	// > 1 return values
 	// fmt.Println(divide(100, 7))
 
-	/*
-		quotient, remainder := divide(100, 7)
-		fmt.Printf("Dividing 100 by 7, quotient = %d and remainder = %d\n", quotient, remainder)
-	*/
+	quotient, remainder := divide(100, 7)
+	fmt.Printf("Dividing 100 by 7, quotient = %d and remainder = %d\n", quotient, remainder)
 
 	// divide 100 by 7 (using divide(...) function) and print only the quotient
+	/*
+		quotient, _ := divide(100, 7)
+		fmt.Printf("Dividing 100 by 7, quotient = %d\n", quotient)
+	*/
 }
 
 func sayHi() {
@@ -45,8 +47,20 @@ func getGreetMsg(userName string) string {
 }
 
 // with > 1 return values
+/*
 func divide(x, y int) (int, int) {
 	quotient := x / y
 	remainder := x % y
 	return quotient, remainder
+}
+*/
+
+// using named results
+func divide(x, y int) (quotient, remainder int) {
+	/*
+		quotient = x / y
+		remainder = x % y
+	*/
+	quotient, remainder = x/y, x%y
+	return
 }
