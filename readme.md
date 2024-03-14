@@ -169,3 +169,29 @@ ex:
 ### Map
 - Typed collection of key/value pairs
 - delete() - to remove a key
+
+## Modularity
+### Modules
+- any code that need to versioned together & deployed together
+- typically it is a folder with go.mod file
+- go.mod (manifest file)
+    - name of the module
+        - typically is the complete repo path
+    - targetted go runtime version
+    - dependencies
+
+create a module
+> go mod init <module_name>
+
+to execute a module
+> go run .
+
+to build a module
+> go build .
+
+> go build -o <binary_name> .
+
+
+### Packages
+- internal organization of a module
+- typically folders with one or more .go files
