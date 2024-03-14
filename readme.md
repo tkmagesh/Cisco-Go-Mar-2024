@@ -135,4 +135,14 @@ ex:
     - fmt.Errorf()
 
 ## Deferred Functions
+- Functions whose execution is postponed until the current function execution is completed
+- function execution is prefixed with "defer" keyword
+- deferred functions are executed in the reverse order
 
+## Panic & Recovery
+### Panic
+- A state of the application where the application execution cannot proceed further
+- Use "panic()" function to create a panic
+- The deferred function that are already scheduled will be executed
+### Recovery
+- The "recover()" returns the info that led to the panic
