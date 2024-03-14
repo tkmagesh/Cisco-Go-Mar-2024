@@ -214,3 +214,7 @@ other userful module commands
 ### Packages
 - internal organization of a module
 - typically folders with one or more .go files
+
+## Structs
+- Like class on OO languages
+- values
