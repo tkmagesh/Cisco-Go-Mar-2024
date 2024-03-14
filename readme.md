@@ -191,6 +191,25 @@ to build a module
 
 > go build -o <binary_name> .
 
+to include a 3rd party module (downloaded to $GOPATH/pkg/mod/... folder)
+> go get <module_name>
+
+to update the go.mod file (with adding/removing the module references)
+> go mod tidy
+
+to download the modules documented in the go.mod file (dependencies)
+> go mod download
+
+to localize the dependencies 
+> go mod vendor
+
+other userful module commands
+> go mod graph
+
+> go mod why <module_name>
+
+### Module command reference
+    - https://go.dev/ref/mod
 
 ### Packages
 - internal organization of a module
