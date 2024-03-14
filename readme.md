@@ -146,3 +146,13 @@ ex:
 - The deferred function that are already scheduled will be executed
 ### Recovery
 - The "recover()" returns the info that led to the panic
+
+## Collections
+- 3 collection types are natively supported
+    - Array
+    - Slice
+    - Map
+### Array
+- Fixed sized collection of data of the same type
+- The size of the array cannot be changed at runtime
+- Memory is allocated and initialized (with default values) by default
