@@ -32,12 +32,23 @@ func main() {
 	fmt.Println("nos2 :", nos2)
 	fmt.Println("nos :", nos)
 
+	// No need to deference to access the members of a "pointer to an array"
+	nosPtr := &nos
+	// fmt.Println((*nosPtr)[0])
+	fmt.Println(nosPtr[0])
+
 	fmt.Println("Before sorting, nos :", nos)
-	sort( /* ?nos */ )
+	sort(&nos)
 	fmt.Println("After sorting, nos :", nos)
 
 }
 
-func sort( /* nos ? */ ) /* no return values */ {
-
+func sort(vals *[5]int) /* no return values */ {
+	for i := 0; i < 4; i++ {
+		for j := i + 1; j < 5; j++ {
+			if vals[i] > vals[j] {
+				vals[i], vals[j] = vals[j], vals[i]
+			}
+		}
+	}
 }
