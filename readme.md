@@ -156,3 +156,9 @@ ex:
 - Fixed sized collection of data of the same type
 - The size of the array cannot be changed at runtime
 - Memory is allocated and initialized (with default values) by default
+
+### Slice
+- Varying sized collection of data of the same type
+- A slice maintains a pointer to an underlying array
+- The size of the slice an be changed at runtime by adding new items
+- append() -> to add new items to a slice
