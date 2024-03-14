@@ -41,6 +41,10 @@ func main() {
 	sort(&nos)
 	fmt.Println("After sorting, nos :", nos)
 
+	/*
+		multi := [5][5]int{}
+		fmt.Println(multi)
+	*/
 }
 
 func sort(vals *[5]int) /* no return values */ {
