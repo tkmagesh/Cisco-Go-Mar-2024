@@ -162,3 +162,4 @@ ex:
 - A slice maintains a pointer to an underlying array
 - The size of the slice an be changed at runtime by adding new items
 - append() -> to add new items to a slice
+![image](./images/slices.png)
