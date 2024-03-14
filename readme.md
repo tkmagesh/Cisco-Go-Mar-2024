@@ -128,7 +128,11 @@ ex:
 ## Errors
 - Errors are just values
 - Errors are "returned" from functions and NOT THROWN
+- Errors should be the last value in the list of return values from a function
 - Errors are objects implementing "error" interface (best practice)
 - Factory functions for creating an error
     - errors.New()
     - fmt.Errorf()
+
+## Deferred Functions
+
