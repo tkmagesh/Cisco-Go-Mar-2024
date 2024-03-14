@@ -162,4 +162,10 @@ ex:
 - A slice maintains a pointer to an underlying array
 - The size of the slice an be changed at runtime by adding new items
 - append() -> to add new items to a slice
+- len() -> # of elements that can be accessed through the slice from the underlying array
+- cap() -> initialized + allocated memory
 ![image](./images/slices.png)
+
+### Map
+- Typed collection of key/value pairs
+- delete() - to remove a key
