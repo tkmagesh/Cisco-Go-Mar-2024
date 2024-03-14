@@ -124,3 +124,11 @@ ex:
     - Assign functions as values to variables
     - Pass functions as arguments to other functions
     - Return functions as return values from other functions
+
+## Errors
+- Errors are just values
+- Errors are "returned" from functions and NOT THROWN
+- Errors are objects implementing "error" interface (best practice)
+- Factory functions for creating an error
+    - errors.New()
+    - fmt.Errorf()
