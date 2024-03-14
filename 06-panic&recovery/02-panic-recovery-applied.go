@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 	var divisor int
@@ -30,6 +33,9 @@ func divideClient(x, y int) (quotient, remainder int, err error) {
 
 // 3rd party api
 func divide(x, y int) (quotient, remainder int) {
+	if y == 0 {
+		panic(errors.New("divide by zero error"))
+	}
 	quotient, remainder = x/y, x%y
 	return
 }
