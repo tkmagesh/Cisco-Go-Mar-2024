@@ -57,7 +57,7 @@ func main() {
 
 	grapes := NewPerishableProduct(100, "Grapes", 50, "2 Days")
 	// fmt.Println(grapes.Format())
-	fmt.Println(grapes)
+	fmt.Println(grapes) // Println function will call the String() method if the argument implements the fmt.Stringer interface
 	grapes.ApplyDiscount(10)
 	// fmt.Println(grapes.Format())
 	fmt.Println(grapes)
