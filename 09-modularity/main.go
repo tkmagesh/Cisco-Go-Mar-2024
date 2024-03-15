@@ -6,6 +6,7 @@ import (
 	"github.com/fatih/color"
 	calc "github.com/tkmagesh/cisco-go-mar-2024/09-modularity/calculator"
 	"github.com/tkmagesh/cisco-go-mar-2024/09-modularity/calculator/utils"
+	"github.com/tkmagesh/cisco-go-mar-2024/09-modularity/models"
 )
 
 func main() {
@@ -25,5 +26,9 @@ func main() {
 
 	fmt.Println("IsEven(21) :", utils.IsEven(21))
 	fmt.Println("IsOdd(21) :", utils.IsOdd(21))
+
+	pen := models.Product{}
+	fmt.Printf("%#v\n", pen)
+	fmt.Println(pen.Id)
 
 }
