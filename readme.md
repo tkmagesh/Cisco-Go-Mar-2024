@@ -226,3 +226,8 @@ other userful module commands
 ### sync.WaitGroup
 - Semaphore based counter
 - Can block the execution of the current function until the counter becomes 0
+
+### Race Detection
+> go run -race <filename>
+
+> go build -race <filename>
