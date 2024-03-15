@@ -221,3 +221,8 @@ other userful module commands
 
 ## Method
 - Just a function with a "receiver"
+
+## Concurrency
+### sync.WaitGroup
+- Semaphore based counter
+- Can block the execution of the current function until the counter becomes 0
