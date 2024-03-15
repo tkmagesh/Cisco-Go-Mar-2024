@@ -255,3 +255,10 @@ other userful module commands
             <- <var_name>
             ex: data := <- ch
         ```
+- Channel Behaviors
+    - Receive Operation
+        - Is ALWAYS a blocking operation
+        - The operation is blocked until the data becomes available in the channel
+    - Send Operation
+        - Is Blocked until a receive operation is initiated
+![image](./images/channels.png)
