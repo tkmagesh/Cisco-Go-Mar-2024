@@ -8,21 +8,23 @@ package main
 import "fmt"
 
 func main() {
-	primes := genPrimes(2, 100)
-	for _, primeNo := range primes {
+	primeCh := genPrimes(2, 100)
+	for primeNo := range primeCh {
 		fmt.Printf("prime : %d\n", primeNo)
 	}
 }
 
-func genPrimes(start, end int) []int {
-	// primes :=[]int{}
-	primes := make([]int, 0)
-	for no := start; no <= end; no++ {
-		if isPrime(no) {
-			primes = append(primes, no)
+func genPrimes(start, end int) <-chan int {
+	ch := make(chan int)
+	go func() {
+		for no := start; no <= end; no++ {
+			if isPrime(no) {
+				ch <- no
+			}
 		}
-	}
-	return primes
+		close(ch)
+	}()
+	return ch
 }
 
 func isPrime(no int) bool {
