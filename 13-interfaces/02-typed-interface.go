@@ -72,4 +72,7 @@ func main() {
 	*/
 	PrintShapeStats(r)
 
+	var x AreaFinder
+	fmt.Println(x)
+
 }

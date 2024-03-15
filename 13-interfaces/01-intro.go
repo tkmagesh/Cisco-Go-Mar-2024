@@ -63,9 +63,19 @@ func PrintPerimeter(x interface{ Perimeter() float64 }) {
 	fmt.Println("Perimeter :", x.Perimeter())
 }
 
+/*
 func PrintShapeStats(x interface {
 	interface{ Area() float64 }
 	interface{ Perimeter() float64 }
+}) {
+	PrintArea(x)      // => x = interface{ Area() float64 }
+	PrintPerimeter(x) // => x = interface{ Perimeter() float64 }
+}
+*/
+
+func PrintShapeStats(x interface {
+	Area() float64
+	Perimeter() float64
 }) {
 	PrintArea(x)      // => x = interface{ Area() float64 }
 	PrintPerimeter(x) // => x = interface{ Perimeter() float64 }
