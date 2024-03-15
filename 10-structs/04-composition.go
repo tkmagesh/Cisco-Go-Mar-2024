@@ -58,4 +58,6 @@ func main() {
 
 	milk := NewPerishableProduct(101, "Milk", 40, "1 Day")
 	fmt.Println(milk)
+
+	fmt.Printf("%T\n", milk)
 }

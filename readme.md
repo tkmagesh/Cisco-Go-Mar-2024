@@ -218,3 +218,6 @@ other userful module commands
 ## Structs
 - Like class on OO languages
 - values
+
+## Method
+- Just a function with a "receiver"
