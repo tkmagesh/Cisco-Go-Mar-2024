@@ -231,3 +231,27 @@ other userful module commands
 > go run -race <filename>
 
 > go build -race <filename>
+
+### Channels
+- Declaration
+    ```
+        var <var_name> chan <data_type>
+        ex: var ch chan int
+    ```
+
+- Instantiation
+    ```
+        <var_name> = make(chan <data_type>)
+        ex: ch = make(chan int)
+    ```
+- Channel Operations (using the channel operator [ <- ] )
+    - Send
+        ```
+            <var_name> <- <data>
+            ex: ch <- 100
+        ```
+    - Receive
+        ```
+            <- <var_name>
+            ex: data := <- ch
+        ```
